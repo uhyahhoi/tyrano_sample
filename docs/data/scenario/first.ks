@@ -1,46 +1,47 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="音響オペ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
+[cm]
 
-「走るか寝るかするメロス」[l][r]
+[bg storage=job_pa_mixer.png time=500]
 
-メロスは激怒した。[l][r]
+ここは劇場の音響卓。[l][r]
+舞台はクライマックスを迎え、いよいよ感動のラストシーンだ。[l][r]
+しかし、主役の役者が痛恨のミス！重要なセリフを飛ばしてしまった。[l][cm]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+進行台本通りなら、ここで感動的なBGMの再生ボタンを押すタイミングだ。[l][r]
+どうする？[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_cue] →予定通りBGMを流す [endlink] [r]
+[link target=*tag_wait] →役者のアドリブを信じて待機する [endlink] [r]
 [s]
 
-*tag_sleep
+*tag_cue
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=butai_stage_small.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+予定通りBGMの再生ボタンを押した。[l][r]
+しかし、役者は飛ばしたセリフを回収しようと必死にアドリブを続けている。[l][r]
+感動的なBGMと焦ったアドリブが完全にズレてしまい、客席はざわつき始めた...。[l][r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_wait
 
-[bg storage=run.jpg time=500]
+[bg storage=gutspose_man.png time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
-
+再生ボタンに置いた指を止め、じっと舞台を見つめる。[l][r]
+役者は見事なアドリブで物語を軌道修正し、最高のタイミングでセリフを放った！[l][r]
+その瞬間にBGMをスタート！[l][r]
+音楽と演技が完璧にシンクロし、劇場は感動の渦に包まれた！[l][r]
 【 GOOD END 】[l][cm]
 
 [jump target=*start]
